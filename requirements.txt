@@ -1,9 +1,8 @@
 opencv-python==4.7.0.72
 opencv-python-headless==4.8.0.74
 tensorflow==2.15.0
-scikit-image @ file:///C:/b/abs_f7z1pjjn6f/croot/scikit-image_1707346180040/work
-scikit-learn @ file:///C:/b/abs_38k7ridbgr/croot/scikit-learn_1684954723009/work
+scikit-learn
 streamlit==1.32.2
 keras==2.15.0
-pillow @ file:///C:/b/abs_e22m71t0cb/croot/pillow_1707233126420/work
-matplotlib @ file:///C:/b/abs_e26vnvd5s1/croot/matplotlib-suite_1698692153288/work
+pillow
+matplotlib
