@@ -59,6 +59,10 @@ To deploy the model as a web application, follow these steps:
 
 2. Run the `app.py` script using Streamlit (`streamlit run app.py`). This will launch a web application where users can upload images and get predictions from the model.
 
+   Application Interface:
+   ![image](https://github.com/rastogi17/comic_art_classifier/assets/143191304/bc050e07-3740-4eb5-aa41-46c70bbe4546)
+
+
 ## Confusion Matrix
 
 The confusion matrix provides valuable insights into the performance of the classifier. Below is a placeholder for the confusion matrix results on test dataset:
