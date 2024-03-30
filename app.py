@@ -36,21 +36,24 @@ def predict_image(img_array):
     return binary_prediction
 
 def main():
-    st.title("Image Uploader")
-    st.write("Upload your images here:")
+    st.title("Comic Art Classifier: Manga or Classic")
+    st.write("Upload your image here:")
 
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
-        st.image(image, caption="Uploaded Image", use_column_width=True)
+        # st.image(image, caption="Uploaded Image", use_column_width=True)
+        st.write("Image Uploaded")
+        st.image(image, caption="Uploaded Image", use_column_width=True, width=400, height=400)
+
 
         # Preprocess the image
         img_array = preprocess_image(image)
         # Predict the image
         prediction = predict_image(img_array)
         st.subheader('The Uploaded Image is classified as')
-        st.subheader(prediction)
+        # st.subheader(prediction)
         if prediction == 0:
             st.subheader('Manga Art style')
         elif prediction == 1:
